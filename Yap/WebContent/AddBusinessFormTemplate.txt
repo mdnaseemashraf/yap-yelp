@@ -1,0 +1,39 @@
+<h1 align="left">Register New Business</h1>
+<form action="/Yap/BusinessRegistration" method="post">
+	<fieldset>    
+	  		Name of Business:<br>
+	  		<input type="text" name="business_name">
+	  		<br>
+	  		
+	  		Type of Business:<br>
+	  		<select name="type">
+			  <option value="cafe">Cafe</option>
+			  <option value="restaurant">Restaurant</option>
+			  <option value="hotel">Hotel</option>
+			  <option value="bar">Bar</option>
+			  <option value="shop">Shop</option>
+			</select>			  		
+	  		<br>
+	  		
+	  		Latitude:<br>
+	  		<input type="text" name="lat">
+	  		<br>
+	  		
+	  		Longitude:<br>
+	  		<input type="text" name="lon">
+	  		<br>
+	  		
+	  		Neighborhood:<br>
+	  		<input type="text" name="neighborhood">
+	  		<br>
+	  		
+	  		City:<br>
+	  		<input type="text" name="city">
+	  		<br>
+	  		
+	  		State:<br>
+		  	<input type="text" name="state">
+		  	<br><br>
+	    <input type="submit" value="Submit">
+    </fieldset>
+</form>

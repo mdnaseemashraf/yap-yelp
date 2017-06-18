@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+  
+  <display-name>YapWebsite</display-name>
+
+  <welcome-file-list>
+  	  <welcome-file>WEB-INF/Landing.html</welcome-file> 
+  	  <!-- home.html Links: UserRegistration.html -->  	  
+  </welcome-file-list>
+
+  <servlet>
+	  <servlet-name>Yap Business Registration Servlet</servlet-name>
+	  <servlet-class>servlet.SubmitBusiness</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Yap Business Registration Servlet</servlet-name>
+	  <url-pattern>/BusinessRegistration</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	  <servlet-name>All Yap Business Servlet</servlet-name>
+	  <servlet-class>servlet.AllBusiness</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>All Yap Business Servlet</servlet-name>
+	  <url-pattern>/AllBusiness</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	  <servlet-name>Business Reviews Servlet</servlet-name>
+	  <servlet-class>servlet.AllReviews</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Business Reviews Servlet</servlet-name>
+	  <url-pattern>/AllReviews</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+	  <servlet-name>Yap Add Review Servlet</servlet-name>
+	  <servlet-class>servlet.AddReview</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Yap Add Review Servlet</servlet-name>
+	  <url-pattern>/AddReview</url-pattern>
+  </servlet-mapping>  
+
+  <servlet>
+	  <servlet-name>Yap User Registration Servlet</servlet-name>
+	  <servlet-class>servlet.UserRegistration</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+	  <servlet-name>Yap User Registration Servlet</servlet-name>
+	  <url-pattern>/UserRegistration</url-pattern>
+  </servlet-mapping>  
+  
+</web-app>
